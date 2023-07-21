@@ -1,0 +1,69 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&family=Inconsolata&family=Ysabeau+Infant:wght@100&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="mainweather.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="input-row">
+            <input
+              type="search"
+              placeholder="Type a city"
+              id="search-query"
+              class="input-field" />
+            <button type="button" class="search-button" id="searchButton">
+              Search
+            </button>
+            <button type="button" class="current-button" id="currentButton">
+              Current
+            </button>
+          </div>
+        </form>
+
+        <h1 id="city">Sydney NSW, Australia</h1>
+        <ul class="lists">
+          <li id="date"></li>
+          <li>Partly Cloudy</li>
+        </ul>
+
+        <div class="bottom-row">
+          <div class="col-6">
+            <div class="image-source">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                class="weather-icon" />
+            </div>
+            <div class="float-left">
+              <span class="temperature" id="temperature">19</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 measurements-col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 77%</li>
+              <li>Wind: 8 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="mainweather.js"></script>
+  </body>
+</html>
