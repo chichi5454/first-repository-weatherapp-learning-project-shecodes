@@ -162,7 +162,7 @@ button:hover {
 .link {
   background-color: #fff;
 }
-link:hover {
+.link:hover {
   cursor: pointer;
   color: #fff;
   background-color: #551a8b;
