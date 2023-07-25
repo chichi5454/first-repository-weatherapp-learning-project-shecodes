@@ -160,5 +160,10 @@ button:hover {
   margin: 0 10px 0 5px;
 }
 .link {
-  background-color: #ced4da;
+  background-color: #fff;
+}
+link:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #551a8b;
 }
